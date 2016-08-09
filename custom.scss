@@ -1,0 +1,30 @@
+// ----
+// Sass (v3.4.21)
+// Compass (v1.0.3)
+// ----
+
+//++
+//Brand SASS Variables
+//------
+
+// Main Colors
+$off-white: #eeeeee;
+$font-color: #555555;
+$brand-primary: red;
+
+
+// Header Styling
+.site-header {
+  background-color: $off-white;
+
+  .site-title {
+
+  	a {
+  		color: $font-color;
+
+  		&:hover {
+  			color: darken($font-color, 20%);
+  		}
+  	}
+  }
+}
