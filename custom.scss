@@ -7,167 +7,196 @@
 //Brand SASS Variables
 //------
 
-// Main Colors
-$off-white: #eeeeee;
-$font-color: #555555;
-$brand-primary: red;
-$brand-secondary: blue;
+//colors
+$brand-blue: #263c9f;
+$brand-light-grey: #eee;
+$brand-white: #fff;
+$brand-red: #660000;
+$brand-blue: #f6ebeb;
+$white: white;
 
-
-// Header Styling
-.site-header {
-  background-color: $off-white;
-
-  .site-title {
-
-  	a {
-  		color: $font-color;
-
-  		&:hover {
-  			color: darken($font-color, 20%);
-  		}
-  	}
-  }
-}
-
+$brand-primary: $brand-blue;
+$brand-secondary: $brand-red;
+$brand-secondary-light: #f6ebeb;
 
 a {
-  color: #263C9F;
+	color: $brand-secondary;
+	
+	&: hover {
+		color: $brand-primary;
+	}
 }
-a:hover {
-  color: #660000;
-}
-
 .site-header {
-  background-color: #eee;
+	background-color: $brand-light-grey;
+	.site-title: ;
+	.widget-area {
+		width: auto;
+	}
+	.site-title a.site-header .widget {
+		float: right;
+	}
+	.widget a button {
+		background: $brand-blue;
+		color: $white;
+		&:hover {
+			background: $brand-secondary;
+			color: $white;
+		}
+	}
 }
-.site-header .site-title a {
-  color: #263C9F;
+.home-top {
+	.widget {
+		font-size: 14px;
+		h5 {
+			color: $brand-blue;
+		}
+	}
+	img {
+		margin: -10px 0;
+	}
 }
-.site-header .site-title a:hover {
-  color: #263C9F;
-}
-.site-header .widget {
-  float: right;
-}
-.site-header .widget a button {
-  background: #263C9F;
-  color: white;
-}
-.site-header .widget a button:hover {
-  background: #660000;
-  color: white;
-}
-
-.home-top .widget {
-  font-size: 14px;
-}
-.home-top .widget h5 {
-  color: #263C9F;
-}
-
 .home-bottom-after {
-  background: #fff;
+	background: $white;
+	.widget-title {
+		color: $brand-secondary;
+		padding: 10px 0 0;
+		font-size: 1.8em;
+	}
+	#menu-services li {
+		display: inline-block;
+		border-bottom: none;
+		a {
+			color: $brand-blue;
+			padding: 0;
+			padding-right: 5px;
+			margin-right: 5px;
+			font-size: 14px;
+			border-right: 1px solid;
+			&:hover {
+				color: $brand-secondary;
+			}
+		}
+		&:last-child a {
+			color: $brand-secondary;
+			border-right: none;
+		}
+	}
 }
-.home-bottom-after .widget-title {
-  color: #660000;
-  padding: 10px 0 0;
-  font-size: 1.8em;
-}
-.home-bottom-after #menu-services li {
-  display: inline-block;
-  border-bottom: none;
-}
-.home-bottom-after #menu-services li a {
-  /*background: $site-primary;
-  color: white;
-  padding:10px 20px;
-  font-size: 12px;*/
-  color: #263C9F;
-  padding: 0;
-  padding-right: 5px;
-  margin-right: 5px;
-  font-size: 14px;
-  border-right: 1px solid;
-}
-.home-bottom-after #menu-services li a:hover {
-  color: #660000;
-}
-.home-bottom-after #menu-services li:last-child a {
-  color: #660000;
-  border-right: none;
-}
-
-.gform_wrapper .gform_body .top_label .gfield_label, .gform_wrapper .gform_body .field_sublabel_below .ginput_complex.ginput_container label, .gform_wrapper .gform_body .field_sublabel_below div[class*=gfield_time_].ginput_container label {
-  display: none;
-}
-
-.gform_wrapper .gform_body .gform_fields .gfield {
-  padding: 0;
-  border-bottom: none;
-}
-
-.gform_wrapper .gform_body input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
-  padding: 10px;
-}
-
-.home-bottom .featuredpage a {
-  color: #263C9F;
-}
-.home-bottom .featuredpage a:hover {
-  color: #660000;
-}
-.home-bottom .featuredpage a.more-link {
-  border: none;
-  border-radius: 3px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 16px 24px;
-  text-transform: uppercase;
-  width: auto;
-  background: #263C9F;
-}
-.home-bottom .featuredpage a.more-link:hover {
-  background: #660000;
-}
-
 .sub-footer {
-  background: #F6EBEB;
+	background: $brand-secondary-light;
+	a {
+		color: $brand-secondary;
+	}
+	.widget-title {
+		color: $brand-secondary;
+	}
 }
-.sub-footer a, .sub-footer .widget-title {
-  color: #660000;
+button {
+	padding: 10px;
+	background-color: $brand-secondary;
+	&:hover {
+		background-color: $brand-blue;
+	}
 }
-
-button, input[type="button"], input[type="reset"], input[type="submit"], .button {
-  padding: 10px;
-  background-color: #660000;
+input[type="button"] {
+	padding: 10px;
+	background-color: $brand-secondary;
+	&:hover {
+		background-color: $brand-blue;
+	}
 }
-button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover {
-  background-color: #263C9F;
+input[type="reset"] {
+	padding: 10px;
+	background-color: $brand-secondary;
+	&:hover {
+		background-color: $brand-blue;
+	}
 }
-
+input[type="submit"] {
+	padding: 10px;
+	background-color: $brand-secondary;
+	&:hover {
+		background-color: $brand-blue;
+	}
+}
+.button {
+	padding: 10px;
+	background-color: $brand-secondary;
+	&:hover {
+		background-color: $brand-blue;
+	}
+}
 .nav-primary {
-  background: #263C9F;
+	background: $brand-blue;
 }
-
-.genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover, .genesis-nav-menu a:hover, .genesis-nav-menu li:hover > a {
-  background: #660000;
-  color: white;
+.genesis-nav-menu {
+	.current-menu-item > a {
+		background: $brand-secondary;
+		color: $white;
+	}
+	.sub-menu .current-menu-item > a:hover {
+		background: $brand-secondary;
+		color: $white;
+	}
+	a:hover {
+		background: $brand-secondary;
+		color: $white;
+	}
+	li:hover > a {
+		background: $brand-secondary;
+		color: $white;
+	}
 }
-
-.title-area, .site-header .widget-area {
-  width: auto;
+.title-area {
+	width: auto;
 }
-
 #zoom-social-icons-widget-2 {
-  padding-right: 20px;
+	padding-right: 20px;
 }
-
-.home-top img {
-  margin: -10px 0;
+// ----// Sass(v3.4.21)// Compass(v1.0.3)// ----// + + //Brand SASS Variables//------// Main Colors$off-white: #eeeeee;$font-color: #555555;$brand-primary: red;$brand-secondary: blue;// Header Styling.site-header {
+	background-color: $off-white;
+	.site-title: ;
 }
-
-
+.gform_wrapper .gform_body {
+	.field_sublabel_below {
+		.ginput_complex.ginput_container label {
+			display: none;
+		}
+		div[class*=gfield_time_].ginput_container label {
+			display: none;
+		}
+	}
+	.top_label .gfield_label {
+		display: none;
+	}
+	.gform_fields .gfield {
+		padding: 0;
+		border-bottom: none;
+	}
+	input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+		padding: 10px;
+	}
+}
+.home-bottom .featuredpage a {
+	color: $brand-blue;
+	&:hover {
+		color: $brand-secondary;
+	}
+	&.more-link {
+		border: none;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+		color: $white;
+		cursor: pointer;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 16px 24px;
+		text-transform: uppercase;
+		width: auto;
+		background: $brand-blue;
+		&:hover {
+			background: $brand-secondary;
+		}
+	}
+}
 
