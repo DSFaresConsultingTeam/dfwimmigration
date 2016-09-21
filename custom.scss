@@ -12,23 +12,24 @@ $brand-blue: #263c9f;
 $brand-light-grey: #eee;
 $brand-white: #fff;
 $brand-red: #660000;
-$brand-blue: #f6ebeb;
+$brand-light-red: #f6ebeb;
 $white: white;
 
 $brand-primary: $brand-blue;
 $brand-secondary: $brand-red;
-$brand-secondary-light: #f6ebeb;
+$brand-secondary-light: $brand-light-red;
 
 a {
 	color: $brand-secondary;
 	
-	&: hover {
+	&:hover {
 		color: $brand-primary;
 	}
 }
+
 .site-header {
 	background-color: $brand-light-grey;
-	.site-title: ;
+
 	.widget-area {
 		width: auto;
 	}
@@ -38,6 +39,7 @@ a {
 	.widget a button {
 		background: $brand-blue;
 		color: $white;
+
 		&:hover {
 			background: $brand-secondary;
 			color: $white;
@@ -47,24 +49,33 @@ a {
 .home-top {
 	.widget {
 		font-size: 14px;
+
+		&:first-child {
+			padding: 0;
+		}
+
 		h5 {
 			color: $brand-blue;
 		}
 	}
+
 	img {
 		margin: -10px 0;
 	}
 }
 .home-bottom-after {
 	background: $white;
+
 	.widget-title {
 		color: $brand-secondary;
 		padding: 10px 0 0;
 		font-size: 1.8em;
 	}
+
 	#menu-services li {
 		display: inline-block;
 		border-bottom: none;
+
 		a {
 			color: $brand-blue;
 			padding: 0;
@@ -72,63 +83,44 @@ a {
 			margin-right: 5px;
 			font-size: 14px;
 			border-right: 1px solid;
+
 			&:hover {
 				color: $brand-secondary;
 			}
 		}
+
 		&:last-child a {
 			color: $brand-secondary;
 			border-right: none;
 		}
 	}
 }
+
 .sub-footer {
 	background: $brand-secondary-light;
+
 	a {
 		color: $brand-secondary;
 	}
+
 	.widget-title {
 		color: $brand-secondary;
 	}
 }
-button {
+
+button, .button, input[type="button"], input[type="reset"], input[type="submit"] {
 	padding: 10px;
 	background-color: $brand-secondary;
+
 	&:hover {
 		background-color: $brand-blue;
 	}
 }
-input[type="button"] {
-	padding: 10px;
-	background-color: $brand-secondary;
-	&:hover {
-		background-color: $brand-blue;
-	}
-}
-input[type="reset"] {
-	padding: 10px;
-	background-color: $brand-secondary;
-	&:hover {
-		background-color: $brand-blue;
-	}
-}
-input[type="submit"] {
-	padding: 10px;
-	background-color: $brand-secondary;
-	&:hover {
-		background-color: $brand-blue;
-	}
-}
-.button {
-	padding: 10px;
-	background-color: $brand-secondary;
-	&:hover {
-		background-color: $brand-blue;
-	}
-}
+
 .nav-primary {
 	background: $brand-blue;
 }
+
 .genesis-nav-menu {
 	.current-menu-item > a {
 		background: $brand-secondary;
@@ -147,25 +139,27 @@ input[type="submit"] {
 		color: $white;
 	}
 }
+
 .title-area {
 	width: auto;
 }
+
 #zoom-social-icons-widget-2 {
 	padding-right: 20px;
 }
-// ----// Sass(v3.4.21)// Compass(v1.0.3)// ----// + + //Brand SASS Variables//------// Main Colors$off-white: #eeeeee;$font-color: #555555;$brand-primary: red;$brand-secondary: blue;// Header Styling.site-header {
-	background-color: $off-white;
-	.site-title: ;
-}
+
 .gform_wrapper .gform_body {
 	.field_sublabel_below {
+
 		.ginput_complex.ginput_container label {
 			display: none;
 		}
+
 		div[class*=gfield_time_].ginput_container label {
 			display: none;
 		}
 	}
+
 	.top_label .gfield_label {
 		display: none;
 	}
@@ -173,18 +167,20 @@ input[type="submit"] {
 		padding: 0;
 		border-bottom: none;
 	}
-	input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+	input:not([type=radio]), input:not([type=checkbox]), input:not([type=submit]), input:not([type=button]), input:not([type=image]), input:not([type=file]) {
 		padding: 10px;
 	}
 }
+
 .home-bottom .featuredpage a {
 	color: $brand-blue;
+
 	&:hover {
 		color: $brand-secondary;
 	}
+
 	&.more-link {
 		border: none;
-		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
 		border-radius: 3px;
 		color: $white;
 		cursor: pointer;
@@ -194,9 +190,15 @@ input[type="submit"] {
 		text-transform: uppercase;
 		width: auto;
 		background: $brand-blue;
+
 		&:hover {
 			background: $brand-secondary;
 		}
 	}
 }
 
+.master-slider-main-widget {
+	.ms-info {
+	    padding: 40px;
+	}
+}
