@@ -30,22 +30,51 @@ a {
 .site-header {
 	background-color: $brand-light-grey;
 
-	.widget-area {
+	.site-title {
+		a {
+			color: $brand-primary;
+
+			&:hover {
+				color: $brand-primary;
+			}
+		}
+	}
+
+	.title-area {
 		width: auto;
 	}
-	.site-title a.site-header .widget {
-		float: right;
-	}
-	.widget a button {
-		background: $brand-blue;
-		color: $white;
 
-		&:hover {
-			background: $brand-secondary;
+	.widget-area {
+		width: auto;
+
+		#zoom-social-icons-widget-2 {
+			padding-right: 20px;
+		}
+	}
+
+	.widget {
+		float: right;
+			
+		a {
+			button {
+			background: $brand-blue;
 			color: $white;
+
+				&:hover {
+					background: $brand-secondary;
+					color: $white;
+				}
+			}
 		}
 	}
 }
+
+
+.nav-primary {
+	background: $brand-blue;
+}
+
+
 .home-top {
 	.widget {
 		font-size: 14px;
@@ -63,6 +92,37 @@ a {
 		margin: -10px 0;
 	}
 }
+
+
+.home-bottom {
+	.featuredpage {
+		a {
+			color: $brand-blue;
+
+			&:hover {
+				color: $brand-secondary;
+			}
+
+			&.more-link {
+				border: none;
+				border-radius: 3px;
+				color: $white;
+				cursor: pointer;
+				font-size: 16px;
+				font-weight: 400;
+				padding: 16px 24px;
+				text-transform: uppercase;
+				width: auto;
+				background: $brand-blue;
+
+				&:hover {
+					background: $brand-secondary;
+				}
+			}
+		}
+	}
+}
+
 .home-bottom-after {
 	background: $white;
 
@@ -117,10 +177,6 @@ button, .button, input[type="button"], input[type="reset"], input[type="submit"]
 	}
 }
 
-.nav-primary {
-	background: $brand-blue;
-}
-
 .genesis-nav-menu {
 	.current-menu-item > a {
 		background: $brand-secondary;
@@ -140,12 +196,10 @@ button, .button, input[type="button"], input[type="reset"], input[type="submit"]
 	}
 }
 
-.title-area {
-	width: auto;
-}
-
-#zoom-social-icons-widget-2 {
-	padding-right: 20px;
+.master-slider-main-widget {
+	.ms-info {
+	    padding: 40px;
+	}
 }
 
 .gform_wrapper .gform_body {
@@ -169,36 +223,5 @@ button, .button, input[type="button"], input[type="reset"], input[type="submit"]
 	}
 	input:not([type=radio]), input:not([type=checkbox]), input:not([type=submit]), input:not([type=button]), input:not([type=image]), input:not([type=file]) {
 		padding: 10px;
-	}
-}
-
-.home-bottom .featuredpage a {
-	color: $brand-blue;
-
-	&:hover {
-		color: $brand-secondary;
-	}
-
-	&.more-link {
-		border: none;
-		border-radius: 3px;
-		color: $white;
-		cursor: pointer;
-		font-size: 16px;
-		font-weight: 400;
-		padding: 16px 24px;
-		text-transform: uppercase;
-		width: auto;
-		background: $brand-blue;
-
-		&:hover {
-			background: $brand-secondary;
-		}
-	}
-}
-
-.master-slider-main-widget {
-	.ms-info {
-	    padding: 40px;
 	}
 }
