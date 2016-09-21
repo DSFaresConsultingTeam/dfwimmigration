@@ -9,6 +9,7 @@
 
 //colors
 $brand-blue: #263c9f;
+$brand-light-blue: #ebebf6;
 $brand-light-grey: #eee;
 $brand-white: #fff;
 $brand-red: #660000;
@@ -16,6 +17,7 @@ $brand-light-red: #f6ebeb;
 $white: white;
 
 $brand-primary: $brand-blue;
+$brand-primary-light: $brand-light-blue;
 $brand-secondary: $brand-red;
 $brand-secondary-light: $brand-light-red;
 
@@ -42,6 +44,10 @@ a {
 
 	.title-area {
 		width: auto;
+		height: initial;
+    	text-indent: initial;
+    	font-size: 1.4em;
+    	color: #666;
 	}
 
 	.widget-area {
@@ -141,7 +147,6 @@ a {
 			padding: 0;
 			padding-right: 5px;
 			margin-right: 5px;
-			font-size: 14px;
 			border-right: 1px solid;
 
 			&:hover {
@@ -157,14 +162,28 @@ a {
 }
 
 .sub-footer {
-	background: $brand-secondary-light;
+	background: $brand-primary-light;
 
 	a {
-		color: $brand-secondary;
+		color: $brand-primary;
+	}
+
+	.entry-title {
+		font-size: 20px;
+		display: inline-block;
+	}
+
+	.entry-meta {
+		display: inline-block;
+		float: right;
+	}
+
+	.more-from-category {
+		text-align: right;
 	}
 
 	.widget-title {
-		color: $brand-secondary;
+		color: $brand-primary;
 	}
 }
 
