@@ -15,6 +15,7 @@ $brand-white: #fff;
 $brand-red: #660000;
 $brand-light-red: #f6ebeb;
 $white: white;
+$brand-grey: #666;
 
 $brand-primary: $brand-blue;
 $brand-primary-light: $brand-light-blue;
@@ -32,26 +33,33 @@ a {
 .site-header {
 	background-color: $brand-light-grey;
 
-	.site-title {
+
+	.title-area {
+		width: auto;
+		
+		.site-description {
+			height: initial;
+    		text-indent: initial;
+    		font-size: 1.4em;
+    		color: $brand-grey;
+		}
+		
+		.site-title {
 		a {
 			color: $brand-primary;
 
 			&:hover {
 				color: $brand-primary;
-			}
-		}
-	}
-
-	.title-area {
-		width: auto;
-		height: initial;
-    	text-indent: initial;
-    	font-size: 1.4em;
-    	color: #666;
+			  }
+		  }
+	  }
+		
 	}
 
 	.widget-area {
 		width: auto;
+		padding-top: 14px;
+		margin-top: 14px;
 
 		#zoom-social-icons-widget-2 {
 			padding-right: 20px;
@@ -184,6 +192,15 @@ a {
 
 	.widget-title {
 		color: $brand-primary;
+	}
+
+	.sub-footer-left {
+		.widget-title {
+			color: $brand-grey;
+			font-size: 1.4em;
+			border-bottom: solid 2px $brand-grey;
+			padding-bottom: 10px;
+		}
 	}
 }
 
