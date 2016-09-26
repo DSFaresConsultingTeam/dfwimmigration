@@ -29,23 +29,31 @@ a {
 		color: $brand-primary;
 	}
 }
+.online-payment {
+	float:right;
+}
+
+.disclaimer {
+	font-size: 10px;
+}
 
 .site-header {
 	background-color: $brand-light-grey;
 
 
 	.title-area {
-		width: auto;
+		width: 350px;
 		
 		.site-description {
-			height: initial;
+			/*height: initial;
     		text-indent: initial;
     		font-size: 1.4em;
-    		color: $brand-grey;
+    		color: $brand-grey;*/
 		}
 		
 		.site-title {
 		a {
+			background-size: contain !important;
 			color: $brand-primary;
 
 			&:hover {
@@ -57,12 +65,13 @@ a {
 	}
 
 	.widget-area {
-		width: auto;
+		min-width: 600px;
+		max-width: 100%;
 		padding-top: 14px;
 		margin-top: 14px;
 
-		#zoom-social-icons-widget-2 {
-			padding-right: 20px;
+		.simple-social-icons {
+			float:left;
 		}
 	}
 
@@ -176,8 +185,13 @@ a {
 		color: $brand-primary;
 	}
 
+	.featured-content .entry {
+		margin-bottom: 10px;
+	}
+
 	.entry-title {
-		font-size: 20px;
+		font-size: initial;
+		font-weight: normal;
 		display: inline-block;
 	}
 
@@ -191,17 +205,16 @@ a {
 	}
 
 	.widget-title {
-		color: $brand-primary;
+		color: $brand-grey;
+		font-size: 1.4em;
+		border-bottom: solid 2px $brand-grey;
+		padding-bottom: 10px;
 	}
 
-	.sub-footer-left {
-		.widget-title {
-			color: $brand-grey;
-			font-size: 1.4em;
-			border-bottom: solid 2px $brand-grey;
-			padding-bottom: 10px;
-		}
+	.sub-footer-left, .sub-footer-right {
+		width: 48%;
 	}
+
 }
 
 button, .button, input[type="button"], input[type="reset"], input[type="submit"] {
